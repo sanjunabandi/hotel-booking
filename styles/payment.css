@@ -1,0 +1,20 @@
+.hotel_details{
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+#content{
+    margin:2%;
+}
+
+.tarrif_details{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+

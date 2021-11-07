@@ -2,3 +2,13 @@
     height: 50px;
     width: 50px;
 } */
+
+#hotels{
+    margin:2%;
+}
+
+.hotel_details{
+    background-color: rgb(132, 136, 139);
+    margin-bottom: 2%;
+    width: 40%;
+}

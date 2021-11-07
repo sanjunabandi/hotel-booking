@@ -26,4 +26,14 @@ input{
 html, body {
     min-height: 100%;
     min-width: 100%;
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+
+header, footer{
+    background-color: rosybrown;
+}
+
+.contact_us{
+    font-weight: bold;
 }
