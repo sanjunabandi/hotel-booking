@@ -3,7 +3,7 @@
     height: 60px;
 }
 
-.social_img{
+.social_media{
     height: 20px;
     width: 22px;
 }
@@ -28,12 +28,62 @@ html, body {
     min-width: 100%;
     margin: 0px;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header, footer{
     background-color: rosybrown;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact_us{
     font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+}
+
+#login{
+    justify-content: space-between;
+    margin-right: 1%;
+}
+
+#login, #logo {
+    align-content: center;
+}
+
+#contact, #social_media{
+    align-items: center;
+}
+
+#social_media{
+    margin-right: 1%;
+}
+
+#contact{
+    margin-left: 5%;
+}
+
+#copyright{
+    font-size: 10px;
+    align-self: flex-end;
+    margin-bottom: 0.5%;
 }

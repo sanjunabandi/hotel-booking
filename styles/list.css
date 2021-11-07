@@ -9,6 +9,28 @@
 
 .hotel_details{
     background-color: rgb(132, 136, 139);
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#view_section{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#map_section{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
 }

@@ -8,20 +8,21 @@
 
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
         <!--Header-->
-        <header>
+        <header class="logo_login">
             <a href="./index.html">
-                <img class="logo_img" src="./assests/images/logo.png" alt="logo">
+                <img id="logo" class="logo_img" src="./assests/images/logo.png" alt="logo">
             </a>
-            <a href="./login.html" target="_blank">Login</a>
+            <a id="login" href="./login.html" target="_self">Login</a>
         </header>
 
         <!--Content-->
         <!--Hotel Tarrif details and availability-->
-        <section id="content">
+        <section id="content_details">
             <div class="hotel_details">
                 <div>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" height="500px" width="500px">
@@ -74,25 +75,25 @@
         <!--Footer-->
         <!--Contact information via social media & copyright information-->
         <footer>
-            <div id="footer">
-                <div>
-                    <a href="./contact.html" target="_blank">Contact Us</a>
-                </div>
-                <div class="contact_details">
+            <article>
+                <a id="content" href="./contact.html">Contact Us</a>
+            </article>
+            <article id="copyright">
+                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+            </article>
+            <article id="social_media">
+                <nav>
                     <a href="https://facebook.com" target="_blank">
-                        <img class="social_img" src="./assests/images/facebook.png" alt="facebook">
+                        <img class="social_media" src="./assests/images/facebook.png" alt="facebook">
                     </a>
                     <a href="https://instagram.com" target="_blank">
-                        <img class="social_img" src="./assests/images/instagram.png" alt="instagram">
+                        <img class="social_media" src="./assests/images/instagram.png" alt="instagram">
                     </a>
                     <a href="https://twitter.com" target="_blank">
-                        <img class="social_img" src="./assests/images/twitter.png" alt="twitter">
+                        <img class="social_media" src="./assests/images/twitter.png" alt="twitter">
                     </a>
-                </div>
-                <div>
-                    <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-                </div>
-            </div>
+                </nav>
+            </article>
         </footer>
     </div>
 </body>
