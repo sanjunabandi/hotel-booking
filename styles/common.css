@@ -1,6 +1,6 @@
 .logo_img{
-    width: 150px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
 }
 
 .social_img{
@@ -21,4 +21,9 @@ input{
 
 ::placeholder{
     opacity: 1;
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
 }
