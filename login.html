@@ -7,10 +7,23 @@
     <title>Login</title>
 
     <link rel="stylesheet" href="./styles/common.css">
+
 </head>
 <body>
-    <div>
-        <span>LOGIN</span>
+    <div id="content">
+        <form action="./index.html">
+            <label for="user_name">
+                Username:
+                <input type="text" id="user_name" placeholder="Enter Username" required oninvalid=" this.setCustomValidity('Please fill out this field')">
+            </label>
+            <br>
+            <label for="user_password">
+                Password:
+                <input type="password" id="user_password" placeholder="Enter Password" required oninvalid=" this.setCustomValidity('Please fill out this field')">
+            </label>
+            <br>
+            <button id="login_btn">Login</button>
+        </form>
     </div>
 </body>
 </html>

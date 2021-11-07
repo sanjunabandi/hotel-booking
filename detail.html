@@ -12,10 +12,10 @@
     <div>
         <!--Header-->
         <header>
-            <span>
+            <a href="./index.html">
                 <img class="logo_img" src="./assests/images/logo.png" alt="logo">
-            </span>
-            <a href="./login.html" target="_blank">Login</a>
+            </a>
+            <a href="./login.html">Login</a>
         </header>
 
         <!--Content-->
@@ -25,7 +25,39 @@
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
             </div>
             <div>
-                <a href="./payment.html">Book Now</a>
+                <form class="form_details" action="./payment.html" method="get">
+                    <div class="form_input">
+                        <label for="no_of_adults">Adults:</label>
+                        <select id="no_of_adults">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="form_input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required/>
+                    </div>
+                    <div class="form_input">
+                        <label for="from_date">From Date: </label>
+                        <input type="date" id="from_date"/>
+                    </div>
+                    <div class="form_input">
+                        <label for="to_date">To Date: </label>
+                        <input type="date" id="to_date"/>
+                    </div>
+                    <div class="form_input">
+                        <label for="total">Total: </label>
+                        <input type="text" id="price" readonly/>
+                    </div>
+                    <button type="submit">Book Now</button>
+                </form>
             </div>
             <div>
                 <span>
@@ -61,7 +93,7 @@
         <footer>
             <div id="footer">
                 <div>
-                    <a href="./contact.html" target="_blank">Contact Us</a>
+                    <a href="./contact.html">Contact Us</a>
                 </div>
                 <div>
                     <a href="https://facebook.com" target="_blank">

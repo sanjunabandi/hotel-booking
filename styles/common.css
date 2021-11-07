@@ -11,3 +11,14 @@
 .basic_padding{
     padding-bottom: 20px;
 }
+
+input{
+    border: 1px solid slategray;
+    border-radius: 3px;
+    padding: 2px;
+    width: 12.5%;
+}
+
+::placeholder{
+    opacity: 1;
+}
