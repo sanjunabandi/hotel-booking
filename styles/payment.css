@@ -2,19 +2,46 @@
     background-color: rgb(132, 136, 139);
     width: 50%;
     height: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
+    margin: 5% auto 2% auto;
+    display: flex;
+}
+.hotel_image{
+    max-height: 300px;
+    max-width: 270px;
 }
 
 #content_details{
     margin:2%;
+    align-content: center;
+    justify-content: center;
+}
+
+.details{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 2%;
+    background-color: rosybrown;
+    height: 200px;
+    align-items: center;
+}
+
+.customer_details{
+    margin:2%;
+}
+
+.details strong{
+    font-family: cursive;
 }
 
 .tarrif_details{
-    border: 2px solid black;
     border-radius: 5px;
-    padding: 2%;
-    margin-bottom: 2%;
+    padding: .5% 1%;
+    margin: 2%;
 }
 
+.hotel_info{
+    padding:5%;
+    align-self: center;
+}

@@ -1,6 +1,7 @@
 .logo_img{
     width: 60px;
     height: 60px;
+    margin-left: 1%;
 }
 
 .social_media{
@@ -63,7 +64,7 @@ footer{
 
 #login{
     justify-content: space-between;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 #login, #logo {
@@ -75,15 +76,13 @@ footer{
 }
 
 #social_media{
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 #contact{
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 #copyright{
     font-size: 10px;
-    align-self: flex-end;
-    margin-bottom: 0.5%;
 }

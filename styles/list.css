@@ -1,18 +1,20 @@
-/* .hotel_img{
-    height: 50px;
-    width: 50px;
-} */
+.hotel_info{
+    display: block;
+    margin-left: 3%;
+}
 
 #hotels{
     margin:2%;
 }
 
 .hotel_details{
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     margin-bottom: 4%;
     width: 40%;
-    display: inline-block;
-    margin-left: 5%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 4%;
 }
 
 #view_section{

@@ -1,8 +1,66 @@
-.hotel_info{
+.hotel_img{
     margin-top: 2%;
+    max-height: 350px;
+    margin-bottom: 2%;
+    padding: 2%;
 }
 
-#content{
-    margin-left: 4%;
-    margin-right: 4%;
+#section_content{
+    margin: 2% 1%;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-left: 1px solid black;
+}
+
+#hotel_book_process{
+    margin: 2.5px 1% 1% 1%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+#hotel{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5%;
+}
+
+.form_input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+input, select{
+    width: 60%;
+    margin-left: 10%;
+}
+
+button{
+    display: flex;
+    width: 80px;
+    height: 35px;
+    margin-left:40%;
+    text-align: center;
+    display: block;
+}
+
+.hotel_details{
+    margin-left: 1%;
+    margin-top:4%;
+}
+
+.hotel_details p,h5{
+    font-family: cursive;
+    font-weight: bold;
+}
+
