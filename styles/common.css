@@ -5,13 +5,13 @@
 html {
 	height: 100%;
 	width: 100%;
-	margin: 0px;
+	margin: 0%;
 }
 
 body {
 	min-height: 100%;
 	min-width: 100%;
-	margin: 0px;
+	margin: 0%;
 	background-color: #e0e0e0;
 }
 
@@ -36,8 +36,7 @@ a:hover {
 	color: black;
 }
 
-header,
-footer {
+header, footer {
 	background-color: rosybrown;
 	display: flex;
 	justify-content: space-between;
@@ -47,7 +46,7 @@ footer {
 }
 
 header {
-	top: 0px;
+	top: 0%;
 }
 
 footer {
@@ -64,13 +63,11 @@ footer {
 	margin-right: 2%;
 }
 
-#login,
-#logo {
+#login, #logo {
 	align-content: center;
 }
 
-#contact-us,
-#social-media-container {
+#contact-us, #social-media-container {
 	align-items: center;
 }
 
@@ -98,6 +95,11 @@ footer {
 	margin: 2%;
 }
 
+.input-container > input{
+	border-radius: 4px;
+	border:1px solid slategray;
+}
+
 .modal-footer {
 	justify-content: center;
 }
@@ -112,4 +114,9 @@ footer {
 
 #contact-btn {
 	margin-left: 2%;
+}
+
+.checked {
+	color: orange;
+	z-index: 1;
 }

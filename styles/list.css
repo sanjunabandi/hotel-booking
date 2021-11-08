@@ -6,7 +6,7 @@
 .hotel-image-container {
 	display: inline-flex;
 	flex-direction: row;
-	margin: 2%;
+	margin-bottom: 4%;
 	margin-left: 4%;
 	background-color: lightgrey;
 	width: 40%;
@@ -24,17 +24,12 @@ li {
 	display: inline;
 	color: black;
 	font-weight: bold;
-	margin: 20px;
+	margin: 5%;
 }
 
 #view-container {
 	width: 27.5%;
-  /*relative*/
 	margin: 0 auto;
-}
-
-#content-container {
-	height: 700px;
 }
 
 .hotel-details {

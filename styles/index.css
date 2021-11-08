@@ -49,9 +49,8 @@
 
 #search-bar-input {
 	width: 30%;
-  /*relative might change while doing responsive*/
 	border: 1px solid transparent;
-	border-radius: 12px;
+	border-radius: 10px;
 	background-color: #f1f1f1;
 	padding: 10px;
 	font-size: 16px;
@@ -62,10 +61,10 @@
 }
 
 #city-cards {
-	height: 310px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+    margin: 4%;
 }
 
 #view-more {
