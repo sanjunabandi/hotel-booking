@@ -1,106 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Detail</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="styles/common.css" />
+	<link rel="stylesheet" href="styles/detail.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" /> </head>
 
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
 <body>
-    <div>
-        <!--Header-->
-        <header class="logo_login">
-            <a href="./index.html">
-                <img id="logo" class="logo_img" src="./assests/images/logo.png" alt="logo">
-            </a>
-            <a id="login" href="./login.html" target="_self">Login</a>
-        </header>
-
-        <!--Content-->
-        <!--Hotel detailed information-->
-        <section id="section_content">
-            <div id="hotel_book_process">
-                <div id="hotel">
-                    <img class="hotel_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-                </div>
-                <form class="form_details" action="./payment.html" method="get">
-                    <div class="form_input">
-                        <label for="no_of_adults">Adults:</label>
-                        <select id="no_of_adults">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
-                    </div>
-                    <div class="form_input">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" required/>
-                    </div>
-                    <div class="form_input">
-                        <label for="from_date">From Date: </label>
-                        <input type="date" id="from_date" required/>
-                    </div>
-                    <div class="form_input">
-                        <label for="to_date">To Date: </label>
-                        <input type="date" id="to_date" required/>
-                    </div>
-                    <div class="form_input">
-                        <label for="total">Total: </label>
-                        <input type="text" id="price" readonly/>
-                    </div>
-                    <button type="submit">Book Now</button>
-                </form>
-            </div>
-            <div class="hotel_details">
-                <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
-                <p>5 Star</p>
-                <p>AMENITIES</p>
-                <ul>
-                    <li>Room service</li>
-                    <li>Restaurant</li>
-                    <li>Business center</li>
-                    <li>Fitness center</li>
-                    <li>Pool</li>
-                </ul>
-                <h5>DESCRIPTION</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas accusantium libero, dolor sint nesciunt laudantium odio est suscipit omnis veritatis nam necessitatibus, neque quos blanditiis numquam quibusdam deleniti assumenda!</p>
-            </div>
-        </section>
-
-        <!--Footer-->
-        <!--Contact information via social media & copyright information-->
-        <footer>
-            <article>
-                <a id="content" href="./contact.html">Contact Us</a>
-            </article>
-            <article id="copyright">
-                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-            </article>
-            <article id="social_media">
-                <nav>
-                    <a href="https://facebook.com" target="_blank">
-                        <img class="social_media" src="./assests/images/facebook.png" alt="facebook">
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img class="social_media" src="./assests/images/instagram.png" alt="instagram">
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <img class="social_media" src="./assests/images/twitter.png" alt="twitter">
-                    </a>
-                </nav>
-            </article>
-        </footer>
-    </div>
+	<div id="body-div">
+		<header>
+			<a href="index.html"> <img src="assests/images/logo.png" alt="logo" id="logo" /> </a>
+			<!-- <a href="login.html" id="login">Login</a> -->
+			<button id="login-btn" type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal"> LOGIN </button>
+			<!-- <br />
+        <span>Header Div</span> -->
+		</header>
+		<section>
+			<!-- <span>Content Div</span> -->
+			<section id="details-container">
+				<div id="image-div"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="hotel-image-detail" alt="Radisson Blu Hotel" /> </div>
+				<!-- <br /> -->
+				<!-- <a href="payment.html">Book Now</a> -->
+				<form id="form" action="payment.html" method="get">
+					<div class="form-input">
+						<label for="num">Adults: </label>
+						<input required class="input" type="number" name="num" value="1" min="1" /> </div>
+					<div class="form-input">
+						<label for="name">Name: </label>
+						<input required class="input" type="text" name="name" autocomplete="off" /> </div>
+					<div class="form-input">
+						<label for="in_date">From Date: </label>
+						<input required class="input" type="date" name="in_date" /> </div>
+					<div class="form-input">
+						<label for="out_date">To Date: </label>
+						<input required class="input" type="date" name="out_date" /> </div>
+					<div class="form-input">
+						<label for="amount">Total: </label>
+						<input name="amount" class="input" type="number" disabled required /> </div>
+					<input class="btn btn-success" type="submit" value="Book Now" /> </form>
+			</section>
+			<section id="hotel-description">
+				<h2>Radisson Blu Hotel</h2>
+				<p class="headings">RATING</p>
+				<p>5 Star</p>
+				<p class="headings">AMENITIES</p>
+				<ul>
+					<li>Room service</li>
+					<li>Restaurant</li>
+					<li>Business center</li>
+					<li>Fitness center</li>
+					<li>Pool</li>
+				</ul>
+				<h5 class="headings">DESCRIPTION</h5>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum asperiores impedit facilis accusantium iure iste sint, architecto laborum ducimus eligendi! Nulla expedita ducimus doloremque blanditiis, obcaecati saepe eligendi incidunt ipsa! </p>
+			</section>
+		</section>
+		<footer>
+			<!-- <span>Footer Div</span> -->
+			<!-- <section id="contact-us">
+          <a href="contact.html">Contact Us</a>
+        </section> -->
+			<button id="contact-btn" type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal"> Contact Us </button>
+			<section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+			<section id="social-media-container">
+				<a href="https:/www.facebook.com" target="_blank"><img src="assests\images\facebook.png" class="social-media" alt="Facebook" /></a>
+				<a href="https:/www.instagram.com" target="_blank"><img src="assests\images\instagram.png" class="social-media" alt="Instagram" /></a>
+				<a href="https:/www.twitter.com" target="_blank"><img src="assests\images\twitter.png" class="social-media" alt="Twitter" /></a>
+			</section>
+		</footer>
+		<!-- login modal -->
+		<div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body">
+						<form id="modal-form" action="index.html" method="get">
+							<div class="input-container">
+								<label for="username">Username:</label>
+								<input type="text" name="username" id="username" placeholder="Enter Username" required /> </div>
+							<div class="input-container">
+								<label for="password">Password:</label>
+								<input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off" required /> </div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" class="btn btn-primary" value="Login" /> </div>
+				</div>
+			</div>
+		</div>
+		<!-- contact modal -->
+		<div class="modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body">
+						<p>Thank you for reaching out!!!</p>
+						<p>Please enter your email and we will get back to you.</p>
+						<form action="index.html" method="get">
+							<div>
+								<label for="useremail">Email:</label>
+								<input type="email" name="useremail" id="useremail" placeholder="Enter your email id" required /> </div>
+						</form>
+					</div>
+					<div id="modal-footer-2" class="modal-footer">
+						<input type="submit" class="btn btn-primary" value="Submit" /> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
