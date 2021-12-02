@@ -13,3 +13,14 @@ viewMoreButton.addEventListener("click", function () {
     viewMoreButton.innerHTML = "View Less";
   }
 });
+
+var cityImgDiv = document.querySelectorAll(".city-image");
+
+//This will pass on the city you clicked
+for (var i = 0; i < cityImgDiv.length; i++) {
+  cityImgDiv[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    let cityName = event.target.closest(".city-image").getAttribute("id");
+    window.location.href = `list.html?city=${cityName}`;
+  });
+}

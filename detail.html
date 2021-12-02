@@ -102,12 +102,7 @@
 
           <!-- form start -->
           <div id="detail-form">
-            <form
-              id="form"
-              action="payment.html"
-              method="get"
-              autocomplete="off"
-            >
+            <form id="form" method="get" autocomplete="off">
               <div class="detail-input-container">
                 <label for="adult">Adults:</label>
                 <input
@@ -171,16 +166,18 @@
           </div>
         </section>
         <section id="hotel-description">
-          <h2>Radisson Blu Hotel</h2>
+          <h2 id="hotel-name">Radisson Blu Hotel</h2>
           <h5 class="headings">RATING</h5>
           <!-- <p>5 Star</p> -->
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
+          <section id="ratings-detail">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </section>
           <h5 class="headings">AMENITIES</h5>
-          <ul>
+          <ul id="amenities-ul">
             <li>Room service</li>
             <li>Restaurant</li>
             <li>Business center</li>
@@ -188,7 +185,7 @@
             <li>Pool</li>
           </ul>
           <h5 class="headings">DESCRIPTION</h5>
-          <p>
+          <p id="hotel-description-para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
             asperiores impedit facilis accusantium iure iste sint, architecto
             laborum ducimus eligendi! Nulla expedita ducimus doloremque

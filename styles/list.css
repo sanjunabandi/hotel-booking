@@ -1,43 +1,62 @@
 .hotel-image {
-	height: 200px;
-	width: 250px;
+  height: 200px;
+  width: 250px;
 }
 
 .hotel-image-container {
-	display: inline-flex;
-	flex-direction: row;
-	margin-bottom: 4%;
-	margin-left: 4%;
-	background-color: lightgrey;
-	width: 40%;
+  margin: 4% 5% 0% 5%;
+  background-color: lightgrey;
+  width: 40%;
+  float: left;
+  display: flex;
+  justify-content: start;
+  align-content: center;
 }
 
 .hotel-image-container:hover {
-	background-color: rosybrown;
+  background-color: rosybrown;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
 }
 
 li {
-	display: inline;
-	color: black;
-	font-weight: bold;
-	margin: 5%;
+  display: inline;
+  color: black;
+  margin: 1.5% 0px;
+  /* padding: 1.5%; */
 }
 
-#view-container {
-	width: 27.5%;
-	margin: 0 auto;
+#pills-tab {
+  justify-content: center;
+}
+
+#content-container {
+  height: 700px;
+  width: 100%;
 }
 
 .hotel-details {
-	display: block;
-	margin: 2% 2.5%;
+  display: block;
+  margin: 2% 2.5%;
 }
 
-.nav-pills .nav-link.active {
-	color: black;
-	background-color: #007bff;
+@media only screen and (max-width: 768px) {
+  .hotel-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  #map img {
+    width: 100%;
+  }
+
+  #map {
+    text-align: center;
+  }
 }

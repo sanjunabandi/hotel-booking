@@ -1,7 +1,7 @@
 headerTemplate();
 footerTemplate();
 
-//HEADER TEMPLATE FN
+//HEADER TEMPLATE FUNCTION
 function headerTemplate() {
   let headerTemplate = `<a href="index.html">
 <img src="assests/images/logo.png" alt="logo" id="logo" />
@@ -27,7 +27,7 @@ LOGOUT
   document.getElementById("headerTemp").innerHTML = headerTemplate;
 }
 
-//FOOTER TEMPLATE FN
+//FOOTER TEMPLATE FUNCTION
 function footerTemplate() {
   let footerTemplate = `<button
   id="contact-btn"
@@ -71,12 +71,12 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 
 //CLOSE MODAL FN
-function closeModal() {
-  loginModal.style.display = "none";
-}
+// function closeModal() {
+//   loginModal.style.display = "none";
+// }
 
 //Setting username and password in localstorage.
-localStorage.setItem("useranme", "admin");
+localStorage.setItem("username", "admin");
 localStorage.setItem("password", "admin");
 
 //LOGIN FUNCTION
@@ -88,7 +88,10 @@ function userLogin() {
     alert("Successfully Loggedin");
     logoutBtn.style.display = "flex";
     loginBtn.style.display = "none";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
     modalLoginBtn.dataset.dismiss = "modal";
+    window.location.reload();
     // closeModal();
   }
 }
