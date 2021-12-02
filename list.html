@@ -1,55 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>List</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/list.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="body-div">
-      <header id="headerTemp">
-        <!-- <a href="index.html">
-          <img src="assests/images/logo.png" alt="logo" id="logo" />
-        </a>
-        <button
-          id="login-btn"
-          type="button"
-          class="btn btn-light"
-          data-toggle="modal"
-          data-target="#loginModal"
-        >
-          LOGIN
-        </button> -->
-      </header>
-      <section id="content-container">
-        <section id="view-container">
-          <ul class="nav nav-pills" id="pills-tab">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="pill" href="#list-View"
-                >List View</a
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>List</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles/common.css" />
+	<link rel="stylesheet" href="styles/list.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" /> </head>
+
+<body>
+	<div id="body-div">
+		<header id="headerTemp"> </header>
+		<section id="content-container">
+			<section id="view-container">
+				<ul class="nav nav-pills" id="pills-tab">
+					<li class="nav-item"> <a class="nav-link active" data-toggle="pill" href="#list-View">List View</a
               >
             </li>
             <li class="nav-item">
@@ -68,57 +37,6 @@
             aria-labelledby="pills-home-tab"
           >
             <div id="list-view">
-              <!-- <a href="detail.html">
-            <section class="hotel-image-container">
-              <img
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                class="hotel-image"
-                alt="Radisson Blu Hotel"
-              />
-              <div class="hotel-details">
-                <h3>Radisson Blu Hotel</h3>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <p>New Delhi</p>
-              </div>
-            </section>
-          </a>
-
-          <section class="hotel-image-container">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-              class="hotel-image"
-              alt="Lalit Hotel"
-            />
-            <div class="hotel-details">
-              <h3>The Lalit New Delhi</h3>    
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star-half-o checked"></span>
-              <p>New Delhi</p>
-            </div>
-          </section>
-          <section class="hotel-image-container">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-              class="hotel-image"
-              alt="Taj Palace"
-            />
-            <div class="hotel-details">
-              <h3>Taj Palace</h3>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>  
-              <p>New Delhi</p>
-            </div>
-          </section> -->
             </div>
           </div>
           <div
@@ -138,36 +56,6 @@
         </div>
       </section>
       <footer id="footerTemp">
-        <!-- <button
-        id="contact-btn"
-        type="button"
-        class="btn btn-info"
-        data-toggle="modal"
-        data-target="#contactModal"
-      >
-        Contact Us
-      </button>
-        <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
-        <section id="social-media-container">
-          <a href="https:/www.facebook.com" target="_blank"
-            ><img
-              src="assests\images\facebook.png"
-              class="social-media"
-              alt="Facebook"
-          /></a>
-          <a href="https:/www.instagram.com" target="_blank"
-            ><img
-              src="assests\images\instagram.png"
-              class="social-media"
-              alt="Instagram"
-          /></a>
-          <a href="https:/www.twitter.com" target="_blank"
-            ><img
-              src="assests\images\twitter.png"
-              class="social-media"
-              alt="Twitter"
-          /></a>
-        </section> -->
       </footer>
 
       <div
@@ -217,7 +105,6 @@
               </form>
             </div>
             <div class="modal-footer">
-              <!-- <input type="submit" class="btn btn-primary" value="Login" /> -->
               <button
                 type="submit"
                 data-dismiss=""

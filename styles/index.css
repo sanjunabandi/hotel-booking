@@ -38,7 +38,6 @@
 }
 
 .city-name {
-  /* margin: 0; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,12 +58,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative;*/
 }
 
 #search-bar-input {
   width: 30%;
-  /*relative might change while doing responsive*/
   border: 1px solid transparent;
   border-radius: 12px;
   background-color: #f1f1f1;
@@ -81,7 +78,6 @@
   margin-bottom: 2.5%;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   #search-bar-input {
     width: 40%;
@@ -94,7 +90,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* margin: 10%; */
   }
 
   .city-image {
