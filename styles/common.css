@@ -1,39 +1,38 @@
 * {
 	font-family: "Ubuntu", sans-serif;
+	box-sizing: border-box;
 }
 
 html {
 	height: 100%;
 	width: 100%;
-	margin: 0px;
+	margin: 0;
 }
 
 body {
-	min-height: 100%;
+	min-height: 100vh;
 	min-width: 100%;
-	margin: 0px;
+	margin: 0;
 	background-color: #e0e0e0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+  /* for body content not hide */;
 }
 
-#main-div {
+#body-div {
 	height: 100%;
 	width: 100%;
 }
 
+a {
+	color: black !important;
+	text-decoration: none !important;
+}
+
 #logo {
-	height: 60px;
+	height: 100%;
 	width: 60px;
 	margin-left: 1%;
-}
-
-a {
-	color: black;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-	color: black;
 }
 
 header,
@@ -42,17 +41,19 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
+	position: fixed;
+	z-index: 1;
 	width: 100%;
 }
 
 header {
-	top: 0px;
+	top: 0;
 }
 
 footer {
-	height: 60px;
-	bottom: 0px;
+  /* height: 60px; */
+	padding: 0.75%;
+	bottom: 0;
 }
 
 .social-media {
@@ -83,7 +84,7 @@ footer {
 }
 
 #copyright {
-	font-size: 12px;
+	font-size: 10px;
 }
 
 #modal-form {
@@ -112,4 +113,12 @@ footer {
 
 #contact-btn {
 	margin-left: 2%;
+}
+
+.modal-backdrop {
+	opacity: 0 !important;
+}
+
+.checked {
+	color: orange;
 }

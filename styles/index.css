@@ -1,4 +1,18 @@
-#city-cards img {
+#content-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.city-cards {
+	height: 275px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 0%;
+}
+
+.city-cards img {
 	height: 150px;
 	width: 150px;
 	border-radius: 25%;
@@ -12,15 +26,7 @@
 	border-radius: 25%;
 }
 
-.city-name {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.city-image .city-name-div {
+.city-name-div {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -29,6 +35,14 @@
 	display: none;
 	color: #f1f1f1;
 	border-radius: 25%;
+}
+
+.city-name {
+  /* margin: 0; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .city-image:hover .city-name-div {
@@ -40,17 +54,19 @@
 	background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
 	height: 380px;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  /* position: relative;*/;
 }
 
 #search-bar-input {
 	width: 30%;
+  /*relative might change while doing responsive*/
 	border: 1px solid transparent;
-	border-radius: 10px;
+	border-radius: 12px;
 	background-color: #f1f1f1;
 	padding: 10px;
 	font-size: 16px;
@@ -60,19 +76,29 @@
 	outline: none;
 }
 
-#city-cards {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-    margin: 4%;
-}
-
 #view-more {
 	text-align: center;
-	margin-bottom: 1%;
+	margin-bottom: 2.5%;
 }
 
-#content-container {
-	display: flex;
-	flex-direction: column;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#search-bar-input {
+		width: 40%;
+	}
+
+	.city-cards {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+    /* margin: 10%; */;
+	}
+
+	.city-image {
+		margin: 7.5%;
+		text-align: center;
+	}
 }
