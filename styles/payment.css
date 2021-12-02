@@ -40,7 +40,6 @@
 	font-weight: bold;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 600px) {
 	#hotel-info {
 		width: 100%;
