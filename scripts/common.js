@@ -65,6 +65,7 @@ let modalLoginBtn = document.getElementById("modal-login-btn");
 let loginModal = document.getElementById("loginModal");
 let username = document.getElementById("username");
 let password = document.getElementById("password");
+
 localStorage.setItem("username", "admin");
 localStorage.setItem("password", "admin");
 

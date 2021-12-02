@@ -19,3 +19,4 @@ for(var i = 0; i < cityImgDiv.length; i++) {
 		window.location.href = `list.html?city=${cityName}`;
 	});
 }
+

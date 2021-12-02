@@ -1,5 +1,6 @@
 let url = window.location.href;
 let cityName = url.split("?")[1].split("=")[1];
+
 const data = null;
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = false;
@@ -7,6 +8,7 @@ let resultObjArr = new Array();
 let filteredResultObjArr = new Array();
 
 function filterHotels(hotels) {
+
 	return !(hotels.rating === undefined && hotels.address === undefined);
 }
 xhr.addEventListener("readystatechange", function() {
@@ -23,10 +25,12 @@ xhr.open("GET", `https://travel-advisor.p.rapidapi.com/locations/search?query=${
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "999a19f357msh98c6dffba35d2cdp1595abjsndc394e46ecbc");
 xhr.send(data);
+
 let listView = document.getElementById("list-view");
 let hotelContainer;
 let clickedHotelName;
 let hotelId;
+
 const hotelDetailsTemplate = function(hotelsArray) {
 	const str = hotelsArray.map((object) => {
 		return `<a href="#"><section class="hotel-image-container">

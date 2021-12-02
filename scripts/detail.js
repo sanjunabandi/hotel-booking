@@ -1,5 +1,6 @@
 let form1 = document.getElementById("form");
 let adult, nameOfCus, fromDate, toDate, totalPrice, priceToDisplay;
+
 const calculateTotalPrice = function() {
 	adult = document.getElementById("adult").value;
 	nameOfCus = document.getElementById("name").value;
@@ -44,11 +45,13 @@ const amenities = async function(amenitiesObj) {
 	}
 	return html;
 };
+
 let hotelDescription = document.getElementById("hotel-description-para");
 let hotelName = document.getElementById("hotel-name");
 let ratings = document.getElementById("ratings-detail");
 let amenitiesUl = document.getElementById("amenities-ul");
 let resultObjArr;
+
 let url = window.location.href;
 const hotelId = url.split("?")[1].split("=")[1];
 const data = null;
@@ -129,6 +132,7 @@ xhr1.send(data1);
 form1.addEventListener("submit", function(event) {
 	event.preventDefault();
 	window.location.href = `payment.html?hotel_id=${hotelId}&adults=${
+
     document.getElementById("adult").value
   }&name=${document.getElementById("name").value}&fromDate=${
     document.getElementById("fromDate").value

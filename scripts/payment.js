@@ -56,7 +56,9 @@ xhr.addEventListener("readystatechange", function() {
 		hotelImageEl.setAttribute("src", resultObjArr.photo.images.medium.url);
 	}
 });
+
 xhr.open("GET", `https://travel-advisor.p.rapidapi.com/hotels/get-details?location_id=${hotelId}`);
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "999a19f357msh98c6dffba35d2cdp1595abjsndc394e46ecbc");
 xhr.send(data);
+
