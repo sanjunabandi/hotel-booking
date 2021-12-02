@@ -9,9 +9,18 @@
     <title>List</title>
     <link
       rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/list.css" />
     <link
@@ -36,9 +45,7 @@
         </button> -->
       </header>
       <section id="content-container">
-        <!-- <span>Content Div</span> -->
         <section id="view-container">
-          <!-- new -->
           <ul class="nav nav-pills" id="pills-tab">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="pill" href="#list-View"
@@ -46,15 +53,22 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#map-View">Map View</a>
+              <a class="nav-link" data-toggle="pill" href="#map-View"
+                >Map View</a
+              >
             </li>
           </ul>
         </section>
-        
+
         <div class="tab-content" id="pills-tab-content">
-        <div class="tab-pane fade show active" id="list-View" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div id="list-view">
-          <a href="detail.html">
+          <div
+            class="tab-pane fade show active"
+            id="list-View"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div id="list-view">
+              <!-- <a href="detail.html">
             <section class="hotel-image-container">
               <img
                 src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
@@ -63,7 +77,6 @@
               />
               <div class="hotel-details">
                 <h3>Radisson Blu Hotel</h3>
-                <!-- <p>5 Star</p> -->
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -81,8 +94,7 @@
               alt="Lalit Hotel"
             />
             <div class="hotel-details">
-              <h3>The Lalit New Delhi</h3>
-              <!-- <p>4.5 Star</p> -->
+              <h3>The Lalit New Delhi</h3>    
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -99,7 +111,6 @@
             />
             <div class="hotel-details">
               <h3>Taj Palace</h3>
-              <!-- <p>4.0 Star</p> -->
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -107,18 +118,24 @@
               <span class="fa fa-star"></span>  
               <p>New Delhi</p>
             </div>
-          </section>
+          </section> -->
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="map-View"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div id="map">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+                alt="Map view"
+                id="map-img"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="map-View" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div id="map-view">
-          <img
-            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
-            alt="Map view"
-          />
-        </div>
-        </div>
-      </div>
       </section>
       <footer id="footerTemp">
         <!-- <button
@@ -258,12 +275,15 @@
           </div>
         </div>
       </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script  type="module" src="scripts/common.js"></script>
-    <script  type="module" src="scripts/list.js"></script>
+      <script
+        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""
+      ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <script type="module" src="scripts/common.js"></script>
+      <script type="module" src="scripts/list.js"></script>
     </div>
   </body>
 </html>
-
